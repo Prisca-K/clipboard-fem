@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "sass:math";
+
+$breakpoints: (
+  "medium": math.div(760, 16) * 1rem,
+  "large": math.div(1200, 16) * 1rem,
+  "x-large": math.div(1350, 16) * 1rem,
+);
+
+@mixin mq($size) {
+  @media (width >= map.get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+@mixin subgrid($place_item) {
+  display: grid;
+  place-items: $place_item;
+  grid-template-columns: subgrid;
+}
+@mixin grid_center {
+  display: grid;
+  place-items: center;
+}
+@mixin flex_center($dir) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: center;
+  justify-content: center;
+}

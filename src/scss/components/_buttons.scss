@@ -1,0 +1,52 @@
+@use "../util/" as u;
+
+.page__buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  height: fit-content;
+  margin-block: 5rem;
+  @include u.mq(medium) {
+    margin-block: 0 1rem;
+    gap: 2rem;
+    flex-direction: row;
+  }
+  .button {
+    width: 90vw;
+    padding-block: 1rem;
+    border-radius: 5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 500ms ease;
+    font-weight: 500;
+    color: var(--white);
+    @include u.mq(medium) {
+      width: fit-content;
+      padding: 1rem 3rem;
+    }
+    &--primary {
+      background-color: var(--green);
+      box-shadow: -5px 1.2rem 5px 0 var(--green-lighter);
+
+      border-bottom: 0.25rem solid var(--green-dark);
+      &:hover {
+        background-color: var(--green-darker);
+        box-shadow: 0 var(--white);
+        transform: translateY(0.25rem);
+      }
+    }
+    &--secondary {
+      background-color: var(--blue);
+      border-bottom: 0.25rem solid var(--blue-darker);
+      box-shadow: -5px 1.2rem 5px 0 var(--blue-lighter);
+
+      &:hover {
+        background-color: var(--blue-dark);
+        box-shadow: 0 var(--white);
+        transform: translateY(0.25rem);
+      }
+    }
+  }
+}
