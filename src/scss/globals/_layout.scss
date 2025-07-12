@@ -186,6 +186,9 @@ section:not(.hero) {
     img {
       width: 100%;
     }
+    &:hover {
+      color: black !important;
+    }
   }
   &__links {
     grid-column: 3 / 4;
@@ -196,6 +199,15 @@ section:not(.hero) {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: flex-start;
+    }
+  }
+  &__link {
+    a {
+      transition: all 500ms ease;
+      &:hover,
+      &:focus-within {
+        color: var(--green) !important;
+      }
     }
   }
   &__media {
