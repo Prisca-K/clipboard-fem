@@ -16,16 +16,17 @@ section:not(.hero) {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 50vh;
   grid-column: 1 / -1;
   background-image: url("/images/bg-header-mobile.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
+  background-size: 100% 300px;
   @include u.subgrid(center);
   text-align: center;
   font-size: clamp(1.25rem, 2vw + 0.5rem, 1.2rem);
   @include u.mq(medium) {
+    background-size: 100% 200px;
     margin-bottom: 6rem;
     background-image: url("/images/bg-header-desktop.png");
   }
@@ -34,11 +35,11 @@ section:not(.hero) {
   }
   &__logo {
     margin-block: 3rem;
-    width: 5rem;
-    align-self: end;
-    @include u.mq(medium) {
-      width: 10rem;
-    }
+    // width: 5rem;
+    align-self: center;
+    // @include u.mq(medium) {
+    //   width: 10rem;
+    // }
     img {
       width: 100%;
       aspect-ratio: 1/1;
@@ -50,7 +51,7 @@ section:not(.hero) {
 
   .page__buttons {
     grid-column: 2/-2;
-    align-self: start;
+    align-self: center;
   }
 }
 
@@ -83,6 +84,9 @@ section:not(.hero) {
       gap: 2rem;
       text-align: start;
     }
+  }
+  &__item {
+    width: 100%;
   }
 }
 

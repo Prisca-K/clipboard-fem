@@ -9,7 +9,7 @@
   height: fit-content;
   margin-block: 5rem;
   @include u.mq(medium) {
-    margin-block: 0 1rem;
+    margin-top: 3rem;
     gap: 2rem;
     flex-direction: row;
   }
