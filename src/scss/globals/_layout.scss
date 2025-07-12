@@ -191,8 +191,11 @@ section:not(.hero) {
   &__media {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 2rem;
     grid-column: 4 / -2;
+    @include u.mq(medium) {
+      gap: 0.5rem;
+    }
   }
   .icon {
     width: 2.2rem;

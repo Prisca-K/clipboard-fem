@@ -20,7 +20,7 @@
     text-align: center;
     text-decoration: none;
     transition: all 500ms ease;
-    font-weight: 500;
+    font-weight: var(--fw-bold);
     color: var(--white);
     @include u.mq(medium) {
       width: fit-content;
