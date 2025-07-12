@@ -34,7 +34,7 @@ section:not(.hero) {
     grid-column: 2 / -2;
   }
   &__logo {
-    margin-block: 3rem;
+    margin-block: 5rem 3rem;
     // width: 5rem;
     align-self: center;
     // @include u.mq(medium) {
@@ -131,19 +131,10 @@ section:not(.hero) {
 
   .logos {
     margin-top: calc(var(--group-gap) * 2);
-    flex-wrap: wrap;
-    gap: 4rem;
+
     .logo {
       img {
         width: 100%;
-        object-fit: cover;
-        @include u.mq(medium) {
-          // width: 100%;
-          width: 250px;
-        }
-        @include u.mq(x-large) {
-          width: 100%;
-        }
       }
     }
   }
