@@ -1,0 +1,23 @@
+:root {
+  --green: hsl(171, 66%, 44%);
+  --green-lighter: hsl(171, 66%, 94%);
+  --green-dark: hsla(171, 66%, 35%, 0.479);
+  --green-darker: hsl(171, 66%, 30%);
+  --blue: hsl(233, 100%, 69%);
+  --blue-dark: hsl(233, 100%, 60%);
+  --blue-darker: hsla(233, 100%, 40%, 0.219);
+  --blue-lighter: hsl(233, 100%, 97%);
+  --grey-dark: hsl(210, 10%, 33%);
+  --grey-lighter: hsla(202, 11%, 66%, 0.106);
+  --grey: hsl(201, 11%, 66%);
+  --white: hsl(0, 0%, 99%);
+
+  // font weights
+  --fw-normal: 400;
+  --fw-bold: 600;
+
+  // font families
+  --ff-bai: "Bai Jamjuree", sans-serif;
+
+  --group-gap: 5rem;
+}
