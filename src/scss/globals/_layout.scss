@@ -98,6 +98,10 @@ section:not(.hero) {
   &__text {
     margin-bottom: var(--group-gap);
   }
+  &__img {
+    width: 200px;
+    object-fit: cover;
+  }
 }
 
 .supercharge {
@@ -176,8 +180,12 @@ section:not(.hero) {
     gap: 0;
   }
   &__logo {
+    width: 50px;
+    aspect-ratio: 1;
     grid-column: 2 / 3;
-
+    img {
+      width: 100%;
+    }
   }
   &__links {
     grid-column: 3 / 4;
