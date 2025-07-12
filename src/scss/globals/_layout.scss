@@ -176,8 +176,8 @@ section:not(.hero) {
     gap: 0;
   }
   &__logo {
-    width: 50px;
     grid-column: 2 / 3;
+
   }
   &__links {
     grid-column: 3 / 4;
